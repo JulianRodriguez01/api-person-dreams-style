@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA5O7X3tZkn0WLyEyz1gWXywAAAAACAAAAAAAQZgAAAAEAACAAAAB4DQd4Je5321tjDoLnZtwOSmxcb/twNKkqS39R2ojW5gAAAAAOgAAAAAIAACAAAAALTJp81oum88ko+AZquBeYps5SGe9V1uXp9022o6wm9oAAAADvM46uFYaTkEH6wfdNSXN9L4RQ98f7F3FlwCqzllUswNrDFgad2u9d9+V063T5/2sNnnwv4H/B/GmNszmxM9MuDhSenzn3PiGSOgQo1EaLel1Dwg1nOodhX6rEfaUedpURHIqLm2zjZbeaDrgWxznr9T125pmSvyq2GFXSxHW+IUAAAADRVmgr4X7sG2BCdkQSHjf57Uks2Qi4rYu19SPGtNGQeahvKdneVCUdNe2SIZIntSnwzk2GxaiKfkW0YJBFL41a</EncryptedPassword>
+    <History>True|2023-09-22T01:00:42.3017818Z;True|2023-09-21T19:48:29.7234877-05:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="MySqlConnection">
+      <Value>server=containers-us-west-40.railway.app%3bport=7156%3bdatabase=dreams_style%3buid=root%3bpassword=xQM3vqIW7vNy6TGQeQ7y%3bAllow User Variables=true%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
