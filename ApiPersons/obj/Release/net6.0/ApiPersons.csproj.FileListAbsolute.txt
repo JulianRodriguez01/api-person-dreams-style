@@ -78,3 +78,5 @@ C:\Users\USER\source\repos\ApiPersons\ApiPersons\obj\Release\net6.0\refint\ApiPe
 C:\Users\USER\source\repos\ApiPersons\ApiPersons\obj\Release\net6.0\ApiPersons.pdb
 C:\Users\USER\source\repos\ApiPersons\ApiPersons\obj\Release\net6.0\ApiPersons.genruntimeconfig.cache
 C:\Users\USER\source\repos\ApiPersons\ApiPersons\obj\Release\net6.0\ref\ApiPersons.dll
+C:\Users\USER\source\repos\ApiPersons\ApiPersons\bin\Release\net6.0\BCrypt.Net-Core.dll
+C:\Users\USER\source\repos\ApiPersons\ApiPersons\bin\Release\net6.0\BCrypt.Net-Next.dll

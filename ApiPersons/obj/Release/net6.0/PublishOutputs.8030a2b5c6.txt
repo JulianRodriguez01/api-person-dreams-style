@@ -4,6 +4,8 @@ C:\Users\USER\source\repos\ApiPersons\ApiPersons\obj\Release\net6.0\PubTmp\Out\a
 C:\Users\USER\source\repos\ApiPersons\ApiPersons\obj\Release\net6.0\PubTmp\Out\ApiPersons.dll
 C:\Users\USER\source\repos\ApiPersons\ApiPersons\obj\Release\net6.0\PubTmp\Out\ApiPersons.runtimeconfig.json
 C:\Users\USER\source\repos\ApiPersons\ApiPersons\obj\Release\net6.0\PubTmp\Out\ApiPersons.pdb
+C:\Users\USER\source\repos\ApiPersons\ApiPersons\obj\Release\net6.0\PubTmp\Out\BCrypt.Net-Core.dll
+C:\Users\USER\source\repos\ApiPersons\ApiPersons\obj\Release\net6.0\PubTmp\Out\BCrypt.Net-Next.dll
 C:\Users\USER\source\repos\ApiPersons\ApiPersons\obj\Release\net6.0\PubTmp\Out\Dapper.dll
 C:\Users\USER\source\repos\ApiPersons\ApiPersons\obj\Release\net6.0\PubTmp\Out\Google.Protobuf.dll
 C:\Users\USER\source\repos\ApiPersons\ApiPersons\obj\Release\net6.0\PubTmp\Out\K4os.Compression.LZ4.dll

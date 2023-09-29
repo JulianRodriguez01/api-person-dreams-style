@@ -10,6 +10,7 @@ namespace ApiPersons.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserRepository userRepository;
+
         public UserController(IUserRepository userRepository) { 
             this.userRepository = userRepository;
         }
@@ -56,5 +57,13 @@ namespace ApiPersons.Controllers
             await userRepository.removeUser(new User { document_number = document_number });
             return NoContent();
         }
+        /*
+        [HttpGet("{email}, {password}")]
+        public async Task<IActionResult> login([FromBody] string email, string password)
+        {
+            await userRepository.login(email, password);
+            return Ok();
+        }
+        */
     }
 }

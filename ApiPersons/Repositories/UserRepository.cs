@@ -12,6 +12,7 @@ namespace ApiPersons.Repositories
         public const string SQL_ADD_USERS = "CALL insert_user(@name_user, @lastname_user, @document_number, @document_type, @person_status, @email, @password)";
         public const string SQL_UPDATE_USERS = "CALL update_user(@name_user, @lastname_user, @document_number, @document_type, @person_status, @email, @password)";
         public const string SQL_DELETE_USERS = "CALL delete_user(@document_number)";
+        public const string SQL_GET_USER_BY_CREDENTIALS = "CALL validate_credential(@email, @password)";
 
         private readonly MySqlConfiguration _connectionConfiguration;
 
@@ -55,5 +56,13 @@ namespace ApiPersons.Repositories
             var result = await db.ExecuteAsync(@SQL_UPDATE_USERS, new {  user.name_user, user.lastname_user, user.document_type, user.document_number, user.person_status });
             return result > 0;
         }
+
+        /*
+        public  Task<bool> IUserRepository.login(string email, string password)
+        {
+            var db = dbConnection();
+            var user = await db.QueryFirstOrDefaultAsync<User>(@SQL_GET_USER_BY_CREDENTIALS, new { username, password });
+            return user;
+        }*/
     }
 }

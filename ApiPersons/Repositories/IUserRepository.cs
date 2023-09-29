@@ -9,5 +9,6 @@ namespace ApiPersons.Repositories
         Task<bool> addUser(User user);
         Task<bool> removeUser(User user);
         Task<bool> updateUser(User user);
+       // Task<bool> login(string email, string password);
     }
 }

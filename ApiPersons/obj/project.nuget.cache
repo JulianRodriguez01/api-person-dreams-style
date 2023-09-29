@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pG0RLnaSvktg3A25+5Ob9GHachpul4B6Nt86gTosWXWf1OzBINVqme5tCiIzu52YoUHDeDlp7xEeCn6dMzz2FA==",
+  "dgSpecHash": "8/ZxuA+OfrixKdLZGSfojqFk3gXj2CL3HZtY+pMcRNmiSdxSk8LrzDpB5AXm3efa3fpEEKHSRDGd3LtjUe3BTQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\USER\\source\\repos\\ApiPersons\\ApiPersons\\ApiPersons.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\dapper\\2.0.143\\dapper.2.0.143.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
