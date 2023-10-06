@@ -13,7 +13,10 @@
           "Dapper": "2.0.143",
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.9",
+          "Moq": "4.20.69",
           "MySql.Data": "8.1.0",
+          "NUnit": "3.13.3",
+          "NUnit3TestAdapter": "4.5.0",
           "Pomelo.EntityFrameworkCore.MySql": "7.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
@@ -34,6 +37,17 @@
           "lib/net6.0/BCrypt.Net-Next.dll": {
             "assemblyVersion": "4.0.3.0",
             "fileVersion": "4.0.3.0"
+          }
+        }
+      },
+      "Castle.Core/5.1.1": {
+        "dependencies": {
+          "System.Diagnostics.EventLog": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Castle.Core.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.1.1.0"
           }
         }
       },
@@ -299,6 +313,17 @@
           }
         }
       },
+      "Moq/4.20.69": {
+        "dependencies": {
+          "Castle.Core": "5.1.1"
+        },
+        "runtime": {
+          "lib/net6.0/Moq.dll": {
+            "assemblyVersion": "4.20.69.0",
+            "fileVersion": "4.20.69.0"
+          }
+        }
+      },
       "MySql.Data/8.1.0": {
         "dependencies": {
           "Google.Protobuf": "3.21.9",
@@ -357,6 +382,23 @@
           }
         }
       },
+      "NETStandard.Library/2.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0"
+        }
+      },
+      "NUnit/3.13.3": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/nunit.framework.dll": {
+            "assemblyVersion": "3.13.3.0",
+            "fileVersion": "3.13.3.0"
+          }
+        }
+      },
+      "NUnit3TestAdapter/4.5.0": {},
       "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "7.0.9",
@@ -446,6 +488,7 @@
           }
         }
       },
+      "System.Diagnostics.EventLog/6.0.0": {},
       "System.Drawing.Common/4.7.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -654,6 +697,13 @@
       "path": "bcrypt.net-next/4.0.3",
       "hashPath": "bcrypt.net-next.4.0.3.nupkg.sha512"
     },
+    "Castle.Core/5.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rpYtIczkzGpf+EkZgDr9CClTdemhsrwA/W5hMoPjLkRFnXzH44zDLoovXeKtmxb1ykXK9aJVODSpiJml8CTw2g==",
+      "path": "castle.core/5.1.1",
+      "hashPath": "castle.core.5.1.1.nupkg.sha512"
+    },
     "Dapper/2.0.143": {
       "type": "package",
       "serviceable": true,
@@ -850,6 +900,13 @@
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
     },
+    "Moq/4.20.69": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8P/oAUOL8ZVyXnzBBcgdhTsOD1kQbAWfOcMI7KDQO3HqQtzB/0WYLdnMa4Jefv8nu/MQYiiG0IuoJdvG0v0Nig==",
+      "path": "moq/4.20.69",
+      "hashPath": "moq.4.20.69.nupkg.sha512"
+    },
     "MySql.Data/8.1.0": {
       "type": "package",
       "serviceable": true,
@@ -863,6 +920,27 @@
       "sha512": "sha512-6sinY78RvryhHwpup3awdjYO7d5hhWahb5p/1VDODJhSxJggV/sBbYuKK5IQF9TuzXABiddqUbmRfM884tqA3Q==",
       "path": "mysqlconnector/2.2.5",
       "hashPath": "mysqlconnector.2.2.5.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
+      "path": "netstandard.library/2.0.0",
+      "hashPath": "netstandard.library.2.0.0.nupkg.sha512"
+    },
+    "NUnit/3.13.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KNPDpls6EfHwC3+nnA67fh5wpxeLb3VLFAfLxrug6JMYDLHH6InaQIWR7Sc3y75d/9IKzMksH/gi08W7XWbmnQ==",
+      "path": "nunit/3.13.3",
+      "hashPath": "nunit.3.13.3.nupkg.sha512"
+    },
+    "NUnit3TestAdapter/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s8JpqTe9bI2f49Pfr3dFRfoVSuFQyraTj68c3XXjIS/MRGvvkLnrg6RLqnTjdShX+AdFUCCU/4Xex58AdUfs6A==",
+      "path": "nunit3testadapter/4.5.0",
+      "hashPath": "nunit3testadapter.4.5.0.nupkg.sha512"
     },
     "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
       "type": "package",
@@ -933,6 +1011,13 @@
       "sha512": "sha512-hYr3I9N9811e0Bjf2WNwAGGyTuAFbbTgX1RPLt/3Wbm68x3IGcX5Cl75CMmgT6WlNwLQ2tCCWfqYPpypjaf2xA==",
       "path": "system.diagnostics.diagnosticsource/7.0.2",
       "hashPath": "system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512"
+    },
+    "System.Diagnostics.EventLog/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lcyUiXTsETK2ALsZrX+nWuHSIQeazhqPphLfaRxzdGaG93+0kELqpgEHtwWOlQe7+jSFnKwaCAgL4kjeZCQJnw==",
+      "path": "system.diagnostics.eventlog/6.0.0",
+      "hashPath": "system.diagnostics.eventlog.6.0.0.nupkg.sha512"
     },
     "System.Drawing.Common/4.7.0": {
       "type": "package",

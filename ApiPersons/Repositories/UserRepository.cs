@@ -1,6 +1,9 @@
 ﻿using ApiPersons.Models;
+using ApiPersons.Tests;
+using ApiPersons.Utilities;
 using Dapper;
 using MySqlConnector;
+using System.Security.Policy;
 using System.Xml.Linq;
 
 namespace ApiPersons.Repositories
@@ -13,11 +16,16 @@ namespace ApiPersons.Repositories
         public const string SQL_UPDATE_USERS = "CALL update_user(@name_user, @lastname_user, @document_number, @document_type, @person_status, @email, @password)";
         public const string SQL_DELETE_USERS = "CALL delete_user(@document_number)";
         public const string SQL_GET_USER_BY_CREDENTIALS = "CALL validate_credential(@email, @password)";
+        public const string SQL_GET_USER_EMAIL = "CALL get_user_email(@email)";
+        public const string SQL_UPDATE_TEMPORAL_TOKEN = "CALL set_token(@email, @temporal_token)";
+        public const string SQL_UPDATE_PASSWORD_TOKEN = "CALL update_password(@email, @temporal_token, @new_password)";
 
         private readonly MySqlConfiguration _connectionConfiguration;
+        private readonly MailHelper _mailHelper;
 
         public UserRepository(MySqlConfiguration connectionConfiguration) {
             _connectionConfiguration = connectionConfiguration;
+            _mailHelper = new MailHelper();
         }
 
         protected MySqlConnection dbConnection() {
@@ -57,12 +65,74 @@ namespace ApiPersons.Repositories
             return result > 0;
         }
 
-        /*
-        public  Task<bool> IUserRepository.login(string email, string password)
+
+        public async Task<User> login(string email, string password)
+        {
+            try
+            {
+                var db = dbConnection();
+                var user = await db.QueryFirstAsync<User>(@SQL_GET_USER_BY_CREDENTIALS, new { email = email, password = password });
+                if (user != null)
+                {
+                    return user;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        public async Task<User> getUserRecoveryAccount(string email)
         {
             var db = dbConnection();
-            var user = await db.QueryFirstOrDefaultAsync<User>(@SQL_GET_USER_BY_CREDENTIALS, new { username, password });
-            return user;
-        }*/
+            return await db.QueryFirstAsync<User>(SQL_GET_USER_EMAIL, new { email = email });
+        }
+
+        public async Task<User> UpdateNewPassword(string email, string token, string newPassword)
+        {
+            try
+            {
+                var db = dbConnection();
+                var user = await db.QueryFirstAsync<User>(@SQL_UPDATE_PASSWORD_TOKEN, new { email = email, token = token, newPassword = newPassword });
+                if (user != null)
+                {
+                    return user;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+        
+        public async Task<User> setToken(string email, string token)
+        {
+            var db = dbConnection();
+            try
+            {
+                User user = await db.QueryFirstAsync<User>(SQL_GET_USER_EMAIL, new { email = email });
+                if (user != null)
+                {
+                    await db.ExecuteAsync(SQL_UPDATE_TEMPORAL_TOKEN, new { email = email, temporal_token = token });
+                    return user;
+                } else
+                {
+                    return null;
+                }                
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
     }
 }

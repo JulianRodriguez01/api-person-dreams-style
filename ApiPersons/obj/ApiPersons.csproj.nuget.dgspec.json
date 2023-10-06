@@ -66,9 +66,21 @@
               "target": "Package",
               "version": "[7.0.9, )"
             },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.69, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[8.1.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",

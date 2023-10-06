@@ -1,4 +1,5 @@
 ﻿using ApiPersons.Models;
+using ApiPersons.Utilities;
 
 namespace ApiPersons.Repositories
 {
@@ -9,6 +10,10 @@ namespace ApiPersons.Repositories
         Task<bool> addUser(User user);
         Task<bool> removeUser(User user);
         Task<bool> updateUser(User user);
-       // Task<bool> login(string email, string password);
+        Task<User> login(string email, string password);
+        Task<User> getUserRecoveryAccount(string email);
+        Task<User> UpdateNewPassword(string email, string token, string newPassword);
+        Task<User> setToken(string email, string token);
+        
     }
 }

@@ -80,3 +80,12 @@ C:\Users\USER\source\repos\ApiPersons\ApiPersons\obj\Release\net6.0\ApiPersons.g
 C:\Users\USER\source\repos\ApiPersons\ApiPersons\obj\Release\net6.0\ref\ApiPersons.dll
 C:\Users\USER\source\repos\ApiPersons\ApiPersons\bin\Release\net6.0\BCrypt.Net-Core.dll
 C:\Users\USER\source\repos\ApiPersons\ApiPersons\bin\Release\net6.0\BCrypt.Net-Next.dll
+C:\Users\USER\source\repos\ApiPersons\ApiPersons\bin\Release\net6.0\NUnit3.TestAdapter.dll
+C:\Users\USER\source\repos\ApiPersons\ApiPersons\bin\Release\net6.0\NUnit3.TestAdapter.pdb
+C:\Users\USER\source\repos\ApiPersons\ApiPersons\bin\Release\net6.0\nunit.engine.dll
+C:\Users\USER\source\repos\ApiPersons\ApiPersons\bin\Release\net6.0\nunit.engine.api.dll
+C:\Users\USER\source\repos\ApiPersons\ApiPersons\bin\Release\net6.0\nunit.engine.core.dll
+C:\Users\USER\source\repos\ApiPersons\ApiPersons\bin\Release\net6.0\testcentric.engine.metadata.dll
+C:\Users\USER\source\repos\ApiPersons\ApiPersons\bin\Release\net6.0\nunit.framework.dll
+C:\Users\USER\source\repos\ApiPersons\ApiPersons\bin\Release\net6.0\Castle.Core.dll
+C:\Users\USER\source\repos\ApiPersons\ApiPersons\bin\Release\net6.0\Moq.dll
